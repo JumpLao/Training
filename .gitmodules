@@ -1,0 +1,6 @@
+[submodule "TraningLoopback"]
+	path = TraningLoopback
+	url = https://github.com/JumpLao/TraningLoopback.git
+[submodule "TrainingClient"]
+	path = TrainingClient
+	url = https://github.com/JumpLao/TrainingClient.git

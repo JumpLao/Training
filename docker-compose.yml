@@ -1,0 +1,18 @@
+version: '3'
+services:
+  postgres:
+    image: "postgres:latest"
+    environment:
+      POSTGRES_PASSWORD: Witsawa122333
+      POSTGRES_USER: training
+    ports:
+      - "6001:5432"
+  api:
+    build: ./TraningLoopback
+    image: trainingapi:latest
+    volumes:
+      - ./TraningLoopback/:/app/
+    working_dir: '/app'
+    command: bash -c 'node .'
+    ports:
+      - "3001:3000"
